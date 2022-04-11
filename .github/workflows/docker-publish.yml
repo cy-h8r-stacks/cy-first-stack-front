@@ -59,7 +59,7 @@ jobs:
           git config user.email "h8r@robot.dev"
           git config user.name "h8r-robot"
           git status
-          git remote set-url origin https://${{ env.ORG }}:${{ secrets.PAT }}@github.com:${{ env.ORG }}/${{ env.HELM_REPO }}.git
+          git remote set-url origin https://${{ env.ORG }}:${{ secrets.PAT }}@github.com/${{ env.ORG }}/${{ env.HELM_REPO }}.git
           git status
           git remote -v
           git add .
