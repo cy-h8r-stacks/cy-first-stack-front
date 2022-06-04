@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import TestComp from './components/Test'
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -18,6 +20,12 @@ const Home: NextPage = () => {
         </h1>
 
         <h1>Hello, World.</h1>
+
+        <TestComp/>
+
+        <h1>Nice to meet you, buddy.</h1>
+
+        <h2>this is header 2, </h2>
 
         <p className={styles.description}>
           Get started by editing{' '}
